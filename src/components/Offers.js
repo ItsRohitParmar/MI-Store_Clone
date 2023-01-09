@@ -8,7 +8,7 @@ const Offers = (props) => {
         {
             offer.map((element, index)=>(
                    <Offer key={element.image} index={index} src={element.image} link={element.url} />
-            ))
+                  ))
         }
     </div>
   )
