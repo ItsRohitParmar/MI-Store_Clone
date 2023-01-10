@@ -23,11 +23,6 @@ const HotAccessories = (props) => {
                 ))
             }
 
-            { smartDevice && smartDevice.map((item, index)=>(
-                    <HotItemCard key={item.image} name={item.name} price={item.price} image={item.image} index={index} />
-                ))
-            }
-
             { home && home.map((item, index)=>(
                     <HotItemCard key={item.image} name={item.name} price={item.price} image={item.image} index={index} />
                 ))

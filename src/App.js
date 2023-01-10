@@ -10,6 +10,8 @@ import Heading from "./components/Heading.js";
 import StarProduct from "./components/StarProduct";
 import HotAccessoriesMenu from "./components/HotAccessoriesMenu";
 import HotAccessories from "./components/HotAccessories";
+import ProductReviews from "./components/ProductReviews";
+import Videos from "./components/Videos.js";
 
 function App() {
   return (
@@ -35,6 +37,14 @@ function App() {
           <Route exact path="/mobileAccessories" element={<HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories} />} />
         </Routes>
       </Router>
+
+      <Heading text="PRODUCT REVIEWS" />
+      <ProductReviews ProductReviews={data.productReviews}/>
+
+      <Heading text="VIDEOS"/>
+      <Videos video={data.videos} />
+
+      <Heading text="IN THE PRESS"/>
     </>
   );
 }
