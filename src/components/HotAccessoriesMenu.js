@@ -1,15 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import "../styles/HotAccessoriesMenu.css"
 
 const HotAccessoriesMenu = () => {
+  var location = useLocation();
+  
   return (
     <div className='HotAccessoriesMenu'>
-        <Link className='HotAccessoriesLink' to="/music">Music Store</Link>
-        <Link className='HotAccessoriesLink' to="/smartDevice">Smart Devices</Link>
-        <Link className='HotAccessoriesLink' to="/home">Home</Link>
-        <Link className='HotAccessoriesLink' to="/lifeStyle">Lifestyle</Link>
-        <Link className='HotAccessoriesLink' to="/mobileAccessories">Mobile Accessories</Link>
+        <Link className={`HotAccessoriesLink ${location.pathname==='/music'?"active":""}`} to="/music">Music Store</Link>
+        <Link className={`HotAccessoriesLink ${location.pathname==='/smartDevice'?"active":""}`} to="/smartDevice">Smart Devices</Link>
+        <Link className={`HotAccessoriesLink ${location.pathname==='/home'?"active":""}`} to="/home">Home</Link>
+        <Link className={`HotAccessoriesLink ${location.pathname==='/lifeStyle'?"active":""}`} to="/lifeStyle">Lifestyle</Link>
+        <Link className={`HotAccessoriesLink ${location.pathname==='/mobileAccessories'?"active":""}`} to="/mobileAccessories">Mobile Accessories</Link>
     </div>
   )
 }
