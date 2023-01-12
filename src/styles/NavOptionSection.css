@@ -1,0 +1,42 @@
+.navOptionSection{
+    display: flex;
+    margin: 3vmax;
+    justify-content: space-around;
+}
+
+
+/* ---- Styling NavOptions Card------------ */
+.navOptionSection>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    margin: 0 0.5vmax;
+    padding: 0.5vmax;
+    width: 20vmax;
+}
+
+.navOptionSection>div:hover{
+    box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+    transform: translateY(-0.4vmax);
+}
+
+.navOptionSection>div>img{
+    width: 10vmax;
+}
+
+.navOptionSection>div>p{
+    margin: 1vmax 0 0;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    color: rgb(85,83, 83);
+    font-size: small;
+}
+
+.navOptionSection>div>span {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    font-weight: 100;
+    font-size: 1vmax;
+}
