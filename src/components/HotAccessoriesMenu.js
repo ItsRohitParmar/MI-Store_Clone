@@ -7,7 +7,7 @@ const HotAccessoriesMenu = () => {
   
   return (
     <div className='HotAccessoriesMenu'>
-        <Link className={`HotAccessoriesLink ${location.pathname==='/music'?"active":""}`} to="/music">Music Store</Link>
+        <Link className={`HotAccessoriesLink ${location.pathname==='/'?"active":""}`} to="/">Music Store</Link>
         <Link className={`HotAccessoriesLink ${location.pathname==='/smartDevice'?"active":""}`} to="/smartDevice">Smart Devices</Link>
         <Link className={`HotAccessoriesLink ${location.pathname==='/home'?"active":""}`} to="/home">Home</Link>
         <Link className={`HotAccessoriesLink ${location.pathname==='/lifeStyle'?"active":""}`} to="/lifeStyle">Lifestyle</Link>
